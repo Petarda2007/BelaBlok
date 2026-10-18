@@ -98,6 +98,6 @@ To learn more about React Native, take a look at the following resources:
 
 ## Copyright
 
-Copyright (c) 2026 [Your name]. All rights reserved.
+Copyright (c) 2026 Patrik Dikan. All rights reserved.
 Unauthorized copying, redistribution, or publication is prohibited.
 See the LICENSE file for details.
