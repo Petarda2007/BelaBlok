@@ -5,8 +5,6 @@ import { stylesAddWhoCalled } from "../../styles";
 import { belaCetvero_t } from '../../types';
 import { whoCalled } from '../Add_Cetvero';
 
-
-
 type Props={
   id: "firstTeam" | "secondTeam"
   belaCetvero: belaCetvero_t

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { RootStackParamList, HomeScreenProps, belaDvoje_t, belaTroje_t, belaCetvero_t, SaveData } from './types';
+import { RootStackParamList, belaDvoje_t, belaTroje_t, belaCetvero_t, SaveData } from './types';
 
 import Home from './Components/Home.tsx';
 import Bela_Dvoje from './Components/Bela_Dvoje.tsx';

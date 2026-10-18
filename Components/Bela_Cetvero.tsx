@@ -36,7 +36,7 @@ export default function Bela_Cetvero({navigation, belaCetvero, setBelaCetvero, s
   
   return(
       <SafeAreaView style={commonStyles.page}>
-        <TopBar priv="4" navigation={navigation} belaCetvero={belaCetvero} setBelaCetvero={setBelaCetvero} setShowResumeSaveDelete={setShowResumeSaveDelete}/>
+        <TopBar navigation={navigation} setShowResumeSaveDelete={setShowResumeSaveDelete}/>
         <PartijaScoreBar first={belaCetvero?.partijaScores?.firstTeam ?? 0} second={belaCetvero?.partijaScores?.secondTeam ?? 0} setShowWhoDeals={setShowChangePartijaScores}/>
         <NameBar belaCetvero={belaCetvero} setBelaCetvero={setBelaCetvero}/> 
         <GamesList navigation={navigation} belaCetvero={belaCetvero} setBelaCetvero={setBelaCetvero}/>

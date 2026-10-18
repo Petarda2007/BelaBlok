@@ -3,8 +3,6 @@ import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { commonStyles, stylesSavesBottomBar, stylesSettings } from "../styles";
 
-import { useState } from 'react';
-
 import { RootStackParamList, SaveData } from '../types';
 
 import { SafeAreaView } from 'react-native-safe-area-context';

@@ -20,11 +20,9 @@ type scores={
   secondPlayer: number
 }
 
-///////////////////////
 const SCREEN_WIDTH=Dimensions.get("window").width;
 const MAIN_MIN_WIDTH=SCREEN_WIDTH*0.88;
 const MAIN_MAX_WIDTH=SCREEN_WIDTH;
-//////////////////////
 
 export default function Game({index, scores, navigation, setBelaDvoje}: Props){
   const widthAnim=useRef(new Animated.Value(MAIN_MAX_WIDTH)).current;
@@ -34,7 +32,6 @@ export default function Game({index, scores, navigation, setBelaDvoje}: Props){
       onMoveShouldSetPanResponder: (_, g)=>Math.abs(g.dx)>10,
 
       onPanResponderMove: (_, g)=>{
-        // convert gesture.dx to a width value
         const newWidth=Math.min(
           MAIN_MAX_WIDTH,
           Math.max(MAIN_MAX_WIDTH+g.dx, MAIN_MIN_WIDTH)
@@ -45,14 +42,12 @@ export default function Game({index, scores, navigation, setBelaDvoje}: Props){
 
       onPanResponderRelease: (_, g)=>{
         if(g.dx<-30){
-          // swipe left → shrink to 80%
           Animated.timing(widthAnim, {
             toValue: MAIN_MIN_WIDTH,
             duration: 200,
-            useNativeDriver: false, // width cannot use native driver
+            useNativeDriver: false,
           }).start();
         }else{
-          // swipe right → expand to 100%
           Animated.timing(widthAnim, {
             toValue: MAIN_MAX_WIDTH,
             duration: 200,
